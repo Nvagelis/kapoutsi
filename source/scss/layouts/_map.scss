@@ -1,0 +1,9 @@
+.map{
+    img{
+        @include img-block;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: justify;
+    }
+}

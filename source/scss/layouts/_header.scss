@@ -1,0 +1,74 @@
+.main-header{
+    background-color: $header-bg;
+    border-bottom: 3px solid $header-border;
+    min-height: 50px;
+    box-shadow: 0 0 5px 0 $header-shadow;
+    margin-bottom: 30px;
+}
+.banner{
+    @include clearfix;
+    float: none;
+    @include media-to(md){
+        float: left;
+    }
+    > h1{
+        @include hide-text;
+    }
+    >a{
+        float: left;
+        height: 50px;
+    }
+    img{
+        position: absolute;
+        top: -16px;
+        left: -10px;
+        z-index: 4;
+    }
+}
+.main-navigation{
+    display: none;
+    @include media-to(md){
+            display: block;
+        }
+    @include clearfix;
+    >h4{
+        @include hide-text;
+    }
+}
+ul.header-list{
+    @include reset-list;
+    float: none;
+    margin-top: 45px;
+    margin-right: -15px;
+    margin-left: -15px;
+    @include media-to(md){
+        float: right;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0 15px;
+    }
+    >li {
+        display: block;
+        text-align: center;
+        border-top: 1px solid $divider-color;
+        @include media-to(md){
+            display: inline-block;
+            border-top: none;
+        }
+    
+        >a {
+            @include font-size(22px);
+            display: block;
+            font-family: $header-font-family;
+            text-decoration: none;
+            padding: 0 20px;
+            text-transform: capitalize;
+            line-height: 50px;
+            &:hover{
+                color: $link-color-hover;
+                background-color: $link-color-hover-bg;
+            }
+        }
+    }
+}

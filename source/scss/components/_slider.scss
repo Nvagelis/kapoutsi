@@ -1,0 +1,32 @@
+section.slider{
+    display: none;
+    margin-bottom: 30px;
+    @extend %section-style;
+    @include media-to(sm){
+        display: block;
+        overflow: hidden;
+    }
+    img{
+        @include img-block;
+    }
+    ul{
+        @include reset-list;
+        @include clearfix;
+        position: relative;
+        li{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            &.previous{
+                z-index: 1;
+            }
+            &.current{
+                z-index: 2;
+            }
+        }
+        
+    }
+}

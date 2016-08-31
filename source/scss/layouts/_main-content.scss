@@ -1,0 +1,48 @@
+section.main-content{
+    @extend %section-style;
+}
+.content-header{
+    position: relative;
+    height: 200px;
+    .content-title{
+        @include font-size(42px);
+        position: relative;
+        z-index: 1;
+        @include media-to(sm){
+            @include font-size(64px);
+        }
+    }
+    .content-img{
+        position: absolute;
+        top: -30px;
+        right: 0;
+        z-index: 0;
+        opacity: .5;
+        @include media-to(sm){
+            opacity: 1;
+        }
+    }
+}
+.content-title{
+    span{
+       &:nth-child(1){
+            color: $header-title-first-color;
+            font-weight: bold;
+        }
+        &:nth-child(2){
+            color: $header-title-secont-color;
+            font-weight: normal;
+        } 
+    }
+}
+.content{
+    article{
+        h2{
+            margin-bottom: 12px;
+        }
+        padding-left: 0;
+        @include media-to(md){
+            padding-left: 30px;
+        }
+    }
+}

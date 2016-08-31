@@ -1,0 +1,72 @@
+.menu-btn{
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 15px 14px;
+    background-color: transparent;
+    border: none;
+    .line,
+    .line:before,
+    .line:after{
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        background-color: $menu-button-color;
+        border-radius: 5px;
+        top: 50%;
+        left: 0;
+    }
+    .line:before{
+        content: "";
+        top: -10px
+    }
+    .line:after{
+        content: "";
+        top: 10px
+    }
+}
+
+//contact button
+a.con-but{
+    @include font-size(22px);
+    width: 220px;
+    margin: 1em auto;
+    position: relative;
+    display: block;
+    border: 3px solid $contact-button-color;
+    color: $contact-button-color;
+    background: none;
+    box-shadow: 0 0 5px #222;
+    border-radius: 70px;
+    line-height: 44px;
+    text-align: center;
+    &:hover{
+        color: $contact-button-hover-color;
+        border: 3px solid $contact-button-hover-color;
+    }
+    span{
+        margin-right: 15px;
+    }
+}
+
+//more button
+a.more{
+    @include font-size(14px);
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: $link-more-color;
+}
+
+//form submit
+.subbut{
+    width: 100px;
+    height: 30px;
+    padding-left: 0;
+    margin-top: 30px;
+}

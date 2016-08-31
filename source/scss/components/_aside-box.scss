@@ -1,0 +1,42 @@
+.side-info{
+    + .side-info{
+        margin-top: 60px;
+    }
+}
+
+.side-info{
+    text-align: center;
+    border: 1px solid $sidebar-border-color;
+    border-radius: 5px;
+    h2{
+        @include font-size(20px);
+        background-color: $aside-head-bg-color;
+        color: $aside-header-color;
+        border-radius: 5px;
+        padding: 8px 15px;
+        margin-bottom: 20px;
+    }
+    p{
+        @include font-size(14px);
+        color: $aside-par-color;
+        padding: 0 0 15px 15px;
+        font-weight: 400;
+    }
+}
+a.mapping{
+    display: inline-block;
+    padding: 0em 0 1em 0em;
+    span{
+        @include font-size(24px);
+        margin-right: 15px;
+        color: $icons-color;
+    }
+}
+
+.side-info.white{
+    h2{
+        background-color: $aside-header-color;;
+        color: $aside-head-bg-color;
+        border-bottom: 1px solid;
+    }
+}

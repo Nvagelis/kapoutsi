@@ -1,0 +1,21 @@
+.container{
+    @include make-container;
+}
+.wrap {
+    @include make-row;
+}
+
+.sideber{
+    @include make-md-col(4, 0);
+    @include make-md-pull(8)
+}
+.content{
+    @include make-md-col(8, 0);
+    @include make-md-push(4)
+}
+.product-box{
+    @include make-xs-col(6);
+    @include make-sm-col(4);
+    //@include make-md-col(4);
+
+}

@@ -1,0 +1,13 @@
+$i : 1;
+@each $sec, $color in $colors{
+    
+    .product-box:nth-child(#{$i}){
+        h3{
+            color: $color
+        }
+        a.more{
+            background-color: $color;
+        }
+    }
+    $i: $i + 1;
+}

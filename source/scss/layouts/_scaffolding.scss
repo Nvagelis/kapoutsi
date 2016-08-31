@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Body reset
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+body{
+    background-image: url("../images/bg_deco.png"), url("../images/bg_pattern.jpg");
+    background-repeat: repeat,repeat;
+    background-position: center center;
+}
